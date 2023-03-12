@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
 
 :root {
   --whiteColor: hsl(0, 0%, 100%);
@@ -19,35 +19,18 @@ body {
   max-width: 1440px;
 }
 
-h1 {
-  font-size: 72px;
-}
-
-h2 {
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 45px;
-  text-transform: uppercase;
-  text-align: left;
-}
-
-h3 {
-  position: absolute;
-  bottom: 20px;
-  width: 220px;
-  margin-bottom: 20px;
-  padding-left: 40px;
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 32px;
-  color: inherit;
-  text-transform: uppercase;
-  text-align: left;
+.logo_mobile,
+.logo_footer_mobile,
+.close,
+.mobile {
+  display: none;
 }
 
 header {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   padding: 60px var(--leftPadding);
   color: var(--whiteColor);
-  background-image: url("images/desktop/image-hero.jpg");
+  background-image: url('images/desktop/image-hero.jpg');
   background-size: 100%;
   height: 650px;
 }
@@ -74,7 +57,7 @@ ul {
 li {
   display: flex;
   justify-content: center;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   position: relative;
   text-decoration: none;
   color: inherit;
@@ -87,7 +70,7 @@ li a {
 }
 
 a::before {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   bottom: -10px;
@@ -114,7 +97,11 @@ a:hover::before {
   height: 280px;
   text-transform: uppercase;
   font-size: 72px;
-  border: 1px solid var(--whiteColor);
+  border: 2px solid var(--whiteColor);
+}
+
+h1 {
+  font-size: 72px;
 }
 
 .container {
@@ -145,19 +132,26 @@ a:hover::before {
   z-index: 1;
 }
 
+.about {
+  display: flex;
+  flex-direction: column;
+}
+
 .about_company div p {
   padding-top: 15px;
   text-align: left;
   color: var(--darkGray);
-  font-family: "Alata", sans-serif;
+  font-family: 'Alata', sans-serif;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 14.7px;
   line-height: 24px;
 }
 
-.about {
-  display: flex;
-  flex-direction: column;
+h2 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 45px;
+  text-transform: uppercase;
+  text-align: left;
 }
 
 .main_section_header {
@@ -173,7 +167,7 @@ button {
   width: 155px;
   border: 1px solid var(--blackColor);
   box-shadow: none;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 15px;
   font-weight: 300;
   text-transform: uppercase;
@@ -192,19 +186,6 @@ button:hover {
   margin-bottom: 180px;
 }
 
-.card {
-  position: relative;
-  width: 256px;
-  height: 450px;
-  color: var(--whiteColor);
-  filter: brightness(0.9);
-  z-index: -1;
-}
-
-.card:hover {
-  filter: opacity(30%);
-}
-
 .text_card {
   position: relative;
   width: 256px;
@@ -218,36 +199,66 @@ button:hover {
   color: var(--blackColor);
 }
 
+h3 {
+  position: absolute;
+  bottom: 20px;
+  width: 220px;
+  margin-bottom: 20px;
+  padding-left: 40px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 32px;
+  color: inherit;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.card {
+  position: relative;
+  width: 256px;
+  height: 450px;
+  color: var(--whiteColor);
+  filter: brightness(0.9);
+  z-index: -1;
+}
+
+.card:hover {
+  filter: opacity(30%);
+}
+
 #deep {
-  background-image: url("images/desktop/image-deep-earth.jpg");
+  background-image: url('images/desktop/image-deep-earth.jpg');
 }
 
 #night {
-  background-image: url("images/desktop/image-night-arcade.jpg");
+  background-image: url('images/desktop/image-night-arcade.jpg');
 }
 
 #soccer {
-  background-image: url("images/desktop/image-soccer-team.jpg");
+  background-image: url('images/desktop/image-soccer-team.jpg');
 }
 
 #grid {
-  background-image: url("images/desktop/image-grid.jpg");
+  background-image: url('images/desktop/image-grid.jpg');
+}
+
+#grid-text {
+  width: 100px;
 }
 
 #above {
-  background-image: url("images/desktop/image-from-above.jpg");
+  background-image: url('images/desktop/image-from-above.jpg');
 }
 
 #pocket {
-  background-image: url("images/desktop/image-pocket-borealis.jpg");
+  background-image: url('images/desktop/image-pocket-borealis.jpg');
 }
 
 #curiosity {
-  background-image: url("images/desktop/image-curiosity.jpg");
+  background-image: url('images/desktop/image-curiosity.jpg');
 }
 
 #fisheye {
-  background-image: url("images/desktop/image-fisheye.jpg");
+  background-image: url('images/desktop/image-fisheye.jpg');
 }
 
 footer {
@@ -297,7 +308,7 @@ footer ul li {
 footer p {
   padding-top: 15px;
   color: var(--darkGray);
-  font-family: "Alata", sans-serif;
+  font-family: 'Alata', sans-serif;
   font-weight: 400;
   font-size: 15px;
 }
@@ -313,7 +324,7 @@ footer p {
   margin: auto;
   margin-top: 15px;
   text-align: center;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .attribution a {
